@@ -1,0 +1,32 @@
+{
+  "name": "servercrud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weejh/servercrud.git"
+  },
+  "keywords": [
+    "crud"
+  ],
+  "author": "@weejh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weejh/servercrud/issues"
+  },
+  "homepage": "https://github.com/weejh/servercrud#readme",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.4",
+    "nodemon": "^1.8.1",
+    "promisify": "0.0.3",
+    "supertest": "^1.1.0"
+  }
+}
