@@ -1,16 +1,1 @@
-{
-  "player": [
-    {
-      "name": "one",
-      "score": "200"
-    },
-    {
-      "name": "two",
-      "score": "300"
-    },
-    {
-      "name": "3",
-      "score": "500"
-    }
-  ]
-}
+{"player":[{"name":"oneone","score":"200"},{"name":"two","score":"300"},{"name":"3","score":"500"}]}

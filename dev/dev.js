@@ -1,19 +1,13 @@
 const express = require('express')
 const app = express()
-// var _ = require('lodash')
 var fs = require('fs')
 const Promise = require('bluebird')
 const bodyParser = require('body-parser')
 app.use(bodyParser.json()) // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })) // support encoded bodies
 const listofPlayersfile = './dev/data.json'
-const listofPlayersfilenew = './dev/datanew.json'
+// const listofPlayersfilenew = './dev/datanew.json'
 const readFile = Promise.promisify(require('fs').readFile)
-const port = process.env.PORT || 3000
-// const openFile = Promise.promisify(require('fs').open)
-// const writeFile = Promise.promisify(require('fs').writeFile)
-// const appendFile = Promise.promisify(require('fs').appendFile)
-// const closeFile = Promise.promisify(require('fs').close)
 
 app.get('/', function (req, res) {
   readFile(listofPlayersfile, 'utf8')
@@ -130,7 +124,7 @@ app.put('/changename/users', function (req, res) {
     })
 })
 
-app.listen(port)
+module.exports = app
 
 function writeTofile (floder, data) {
   fs.writeFile(floder, data, function (err) {
